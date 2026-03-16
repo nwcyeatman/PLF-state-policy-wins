@@ -313,7 +313,7 @@ function updateHeader() {
     total + ' Wins' + (activeYear !== 'ALL' ? ' · ' + activeYear : '');
   document.getElementById('leg-max').textContent = calcMax();
   document.getElementById('welcome-stat').textContent =
-    total + ' wins recorded' + (activeYear !== 'ALL' ? ' in ' + activeYear : ' across all years');
+    total + ' wins recorded' + (activeYear !== 'ALL' ? ' in ' + activeYear : ' in three years');
 }
 
 // ── Map ───────────────────────────────────────────────────────────────────────
@@ -338,7 +338,7 @@ function showWelcome() {
       <h2>Click any state<br>to view wins</h2>
       <div class="welcome-divider"></div>
       <p>Pacific Legal Foundation shapes policy in statehouses across America — advancing freedom through legislation.</p>
-      <div class="welcome-stat">${total} wins recorded${activeYear !== 'ALL' ? ' in ' + activeYear : ' across all years'}</div>
+      <div class="welcome-stat">${total} wins recorded${activeYear !== 'ALL' ? ' in ' + activeYear : ' in three years'}</div>
     </div>`;
   document.getElementById('sidebar-state').textContent = 'Select a State';
   document.getElementById('sidebar-meta').textContent  = '';
